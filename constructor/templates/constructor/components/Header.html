@@ -1,0 +1,34 @@
+<section class="header" id="{{block.header.info.name}}" style="background-image: url('{{block.header.kamaz.img.url}}')">
+
+    <div class="tn-atom one"></div>
+    <div class="tn-atom two"></div>
+    <div class="tn-atom three"></div>
+    <div class="tn-atom four"></div>
+    <div class="tn-atom five"></div>
+    <div class="tn-atom six"></div>
+
+    <div class="container">
+
+        <div class="header_wrapper">
+            <div class="header_logo">{{block.header.logo}}</div>
+            <nav class="header_nav">
+                <ol>
+                    {% for key,value in nav.items  %}
+                        <li><a href="#{{value}}" class="scroll-to">{{key}}</a></li>
+                    {% endfor %}
+                </ol>
+            </nav>
+            <div class="header_phone"><a href="tel:+{{block.header.number}}">+{{block.header.number}}</a></div>
+        </div>
+
+        <div class="header_content">
+            <div class="header_kamaz">
+                <h1>{{block.header.kamaz.name}}</h1>
+                <p>{{block.header.kamaz.description}}</p>
+            </div>
+            <a href="#{{ block.header.link_to_teleport}}" class="btn header_button">Подробнее</a>
+        </div>
+
+    </div>
+
+</section>

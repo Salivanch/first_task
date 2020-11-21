@@ -1,0 +1,25 @@
+<section class="sendquestion" id="{{block.send_question.name}}" style="background-image: url('{{block.send_question.kamaz.img.url}}')">
+    
+    <div class="container">
+        <h2>{{block.send_question.heading}}</h2>
+
+        <div class="sendquestion_wrapper">
+            <div class="sendquestion_info">
+                <div><a href="tel:+{{block.send_question.number}}">+{{block.send_question.number}}</a></div>
+                <div><a href="email:{{block.send_question.email}}">{{block.send_question.email}}</a></div>
+                <div><span>График работы:</span><br>{{block.send_question.working}}</div>
+                <div><a href="{{block.send_question.insta}}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="{{block.send_question.telega}}" target="_blank"><i class="fab fa-telegram-plane"></i></a></div>
+            </div>
+            <div class="sendquestion_form">
+                <form action="{% url 'question' %}" method="POST" class="question_form">
+                    {% csrf_token %}
+                    {{QuestionForm.as_p}}
+                    <button type="submit" class="btn sendquestion_button">Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</section>

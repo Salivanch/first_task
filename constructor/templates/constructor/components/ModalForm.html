@@ -1,0 +1,34 @@
+{% if user.is_authenticated %}
+    <form action="{% url 'logout' %}" method="POST">
+        {% csrf_token %}
+        <button type="submit" class="open-modal close">Выход</button>
+    </form>
+{% else %}
+    <button type="submit" class="open-modal close">Авторизация</button>
+
+    <div class="modal-overlay">
+        <div class="modal">
+
+            <a class="close-modal">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <div class="modal-content">
+                <form action="{% url 'login' %}" method="POST" class="signin">
+                        <h3>Авторизация</h3>
+                        {% csrf_token %}
+                        {{LoginForm.as_p}}
+                    <input type="submit" value="Войти" />
+                </form>
+                <form action="{% url 'registration' %}" method="POST" class="signup">
+                    <h3>Регистрация</h3>
+                    {% csrf_token %}
+                    {{RegistrationForm.as_p}}
+                    <input type="submit" value="Зарегистрироваться" />
+                </form> 
+            <a class="next">Нет аккаунта? Зарегистрироваться</a>
+            </div>
+        
+        </div>
+    </div>
+{% endif %}

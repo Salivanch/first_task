@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'constructor/CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'constructor/CSS/model-form.css' %}">
+</head>
+<body>
+    {% if content %}
+
+        {% for block in content %}
+
+            {% if block.header %}
+                {% include 'constructor/components/Header.html' %}
+            {% endif %}
+
+            {% if block.have_questions %}
+                {% include 'constructor/components/HaveQuestions.html' %}
+            {% endif %}
+
+            {% if block.send_question %}
+                {% include 'constructor/components/SendQuestion.html' %}
+            {% endif %}
+
+        {% endfor %}
+
+    {% else %}
+
+        <h1>На сайте отсутствует контент!</h1>
+
+    {% endif %}
+
+    {% include 'constructor/components/ModalForm.html' %}
+
+    <script src="{% static 'constructor/JS/main.js' %}"></script>
+    <script src="{% static 'constructor/JS/model-form.js' %}"></script>
+</body>
+</html>

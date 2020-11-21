@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Здравствуйте, {{user}}!</h1>
+    <h2>Для дальнейшего использования сайта необходимо подтвредить аккаунт.</h2>
+    <h3>Вы можете это сделать перейдя по ссылке снизу.</h3>
+    <h4><a href="{{domain}}{% url 'confirm' token %}">Подтвредить</a></h4>
+    <p>С уважением, <br>Администрация сайта</p>
+</body>
+</html>

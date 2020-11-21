@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация об пользователях</title>
+</head>
+<body>
+    <p>Зарегистрированные пользователи:
+        {% for user in all %}
+            {{user}} 
+        {% endfor %}
+    </p>
+    <p>Авторизованные пользователи:
+        {% for user in online %}
+            {{user}} 
+        {% endfor %}
+    </p>
+</body>
+</html>

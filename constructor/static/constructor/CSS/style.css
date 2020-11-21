@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Arial',sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 153px;
+  height: 153px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff203;
+  border-color: #fff203;
+  color: #000000;
+}
+
+.tn-atom {
+  opacity: 0.5;
+  background-color: #a3a3a3;
+  position: absolute;
+  z-index: 7;
+  width: 1px;
+  height: 100vh;
+  top: 0px;
+}
+
+.one {
+  left: 15%;
+}
+
+.two {
+  left: 24.5%;
+}
+
+.three {
+  top: 9.7%;
+  left: 50.2%;
+  height: 92.4vh !important;
+}
+
+.four {
+  left: 75.8%;
+}
+
+.five {
+  left: 86%;
+}
+
+.six {
+  z-index: 8;
+  top: 80px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+}
+
+.tn-cir {
+  border-width: 1px;
+  border-radius: 3000px;
+  opacity: 0.15;
+  background-position: center center;
+  border-color: #a3a3a3;
+  border-style: solid;
+  position: relative;
+}
+
+.tn-one {
+  left: calc(50% - 600px + 804px);
+  width: 600px;
+  height: 600px;
+  top: 55%;
+}
+
+.tn-two {
+  position: absolute;
+  left: calc(50% - 600px + 954px);
+  width: 300px;
+  height: 300px;
+  top: 75%;
+}
+
+.tn-three {
+  width: 100px;
+  top: 9%;
+  height: 100px;
+  left: calc(50% - 600px + 1053px);
+}
+
+.container {
+  max-width: 1166px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  color: white;
+  position: relative;
+  height: 100vh;
+  background-blend-mode: color;
+  background-color: #00000090;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header a {
+  color: white;
+}
+
+.header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header_logo {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  width: 15%;
+  position: relative;
+  left: -23px;
+}
+
+.header_nav {
+  width: 75.5%;
+  position: relative;
+  left: 5px;
+}
+
+.header_nav ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header_nav li a {
+  font-size: 18px;
+}
+
+.header_nav li a:hover {
+  color: #fff203;
+}
+
+.header_phone {
+  font-size: 18px;
+  width: 14%;
+  text-align: center;
+  position: relative;
+  left: 21px;
+}
+
+.header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 19% 14% 0 2%;
+}
+
+.header_kamaz {
+  max-width: 671px;
+}
+
+.header_kamaz h1 {
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header_kamaz p {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 21% 0px 0px 26%;
+  line-height: 1.5;
+}
+
+.header_button {
+  margin-bottom: 6%;
+}
+
+.interesting {
+  position: relative;
+  height: 120vh;
+  overflow: hidden;
+}
+
+.interesting a {
+  color: black;
+}
+
+.interesting .tn-atom {
+  z-index: -1 !important;
+  height: 120vh;
+}
+
+.interesting_heading {
+  padding: 5.6% 0px 3.5% 4%;
+}
+
+.interesting_heading h2 {
+  font-size: 70px;
+}
+
+.interesting_banner {
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.interesting_wrapper {
+  position: absolute;
+  top: 0;
+  right: 27%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  max-width: 460px;
+  padding: 6.3% 3.0% 2.8% 3.15537965%;
+  font-size: 17px;
+}
+
+.interesting_title h3 {
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.interesting_text {
+  margin-top: 35px;
+  line-height: 1.5;
+}
+
+.interesting_button {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.sendquestion {
+  height: 110;
+  height: 110vh;
+  background-blend-mode: color;
+  background-color: #00000090;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+
+.sendquestion h2 {
+  font-size: 75px;
+  color: white;
+  padding: 6% 2%;
+}
+
+.sendquestion_wrapper {
+  margin-top: 11%;
+  margin-left: 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sendquestion_info {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 240px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sendquestion span {
+  font-size: 18px;
+}
+
+.sendquestion a {
+  color: white;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.sendquestion_form form {
+  width: 488px;
+}
+
+.sendquestion_form input, .sendquestion_form label {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.sendquestion_form input {
+  border: none;
+  width: 90%;
+  margin-bottom: 20px;
+  height: 40px;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16px;
+}
+
+.sendquestion_button {
+  margin-top: 35px;
+  outline: none;
+  background: none;
+  color: white;
+  word-break: break-word;
+}
+
+.sendquestion .errorlist {
+  list-style: none;
+  display: block;
+  font-size: 14px;
+  display: block;
+  color: #eb6d6d;
+  margin: -10px 0px 12px 5px;
+}
+/*# sourceMappingURL=style.css.map */

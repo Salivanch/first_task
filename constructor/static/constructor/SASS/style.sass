@@ -1,0 +1,252 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Arial',sans-serif
+
+a
+    text-decoration: none
+
+.btn
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    transition: 0.2s all;
+    display: flex
+    flex-direction: column
+    width: 153px;
+    height: 153px;
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    &:hover
+        background-color: #fff203
+        border-color: #fff203
+        color: #000000
+
+//линии
+.tn-atom
+    opacity: 0.5
+    background-color: #a3a3a3
+    position: absolute
+    z-index: 7
+    width: 1px
+    height: 100vh
+    top: 0px
+.one
+    left: 15%
+.two
+    left: 24.5%
+.three
+    top: 9.7%
+    left: 50.2%
+    height: 92.4vh!important
+.four 
+    left: 75.8%;
+.five
+    left: 86%
+.six
+    z-index: 8
+    top: 80px
+    width: 100%
+    height: 1px
+    left: 0
+
+//круги
+.tn-cir
+    border-width: 1px;
+    border-radius: 3000px;
+    opacity: 0.15;
+    background-position: center center;
+    border-color: #a3a3a3;
+    border-style: solid;
+    position: relative
+.tn-one
+    left: calc(50% - 600px + 804px);
+    width: 600px;
+    height: 600px;  
+    top: 55%;
+.tn-two
+    position: absolute
+    left: calc(50% - 600px + 954px);
+    width: 300px;
+    height: 300px;
+    top: 75%;
+.tn-three
+    width: 100px;
+    top: 9%;
+    height: 100px;
+    left: calc(50% - 600px + 1053px);    
+
+.container
+    max-width: 1166px
+    display: block
+    margin: 0 auto
+
+//HeaderBlock
+.header
+    a
+        color: white
+    color: white
+    position: relative
+    height: 100vh
+    background-blend-mode: color
+    background-color: #00000090
+    background-position: center center
+    background-size: cover
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        padding: 26px
+        align-items: center
+        width: 100%
+    &_logo
+        font-size: 25px
+        font-weight: 500
+        text-align: center
+        width: 15%;
+        position: relative;
+        left: -23px;
+    &_nav
+        width: 75.5%;
+        position: relative;
+        left: 5px;
+        ol
+            list-style: none
+            display: flex
+            justify-content: space-around
+        li a
+            font-size: 18px
+            &:hover
+                color: #fff203
+    &_phone 
+        font-size: 18px
+        width: 14%;
+        text-align: center;
+        position: relative;
+        left: 21px;
+    &_content
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin: 19% 14% 0 2%
+    &_kamaz
+        max-width: 671px;
+        h1
+            font-size: 80px;
+            font-weight: 600;
+            text-transform: uppercase
+        p
+            font-size: 30px;
+            font-weight: 400;
+            padding: 21% 0px 0px 26%;
+            line-height: 1.5;
+    &_button
+        margin-bottom: 6%
+
+///HaveQuestionsBlock
+.interesting
+    position: relative
+    height: 120vh
+    overflow: hidden
+    a
+        color: black
+    .tn-atom
+        z-index: -1!important;
+        height: 120vh
+    &_heading
+        padding: 5.6% 0px 3.5% 4%
+        h2
+            font-size: 70px;
+    &_banner
+        background-position: center center
+        background-size: cover
+        height: 80vh
+        position: relative
+    &_wrapper
+        position: absolute
+        top: 0
+        right: 27%
+        display: flex
+        flex-direction: column
+        background: white
+        max-width: 460px
+        padding: 6.3% 3.0% 2.8% 3.15537965%
+        font-size: 17px
+    &_title h3
+        font-size: 33px;
+        font-weight: 400;
+        text-transform: uppercase
+        line-height: 1.5
+    &_text
+        margin-top: 35px
+        line-height: 1.5
+    &_button
+        margin-top: 20px
+        border: 1px solid black
+
+//SendQuestionBlock
+.sendquestion
+    height: 110
+    height: 110vh
+    background-blend-mode: color
+    background-color: #00000090
+    background-position: center center
+    background-size: cover
+    color: white
+    h2
+        font-size: 75px;
+        color: white
+        padding: 6% 2%
+    &_wrapper
+        margin-top: 11%
+        margin-left: 14%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &_info
+        font-size: 30px
+        display: flex
+        flex-direction: column
+        height: 240px
+        justify-content: space-between
+    span
+        font-size: 18px
+    a
+        color: white
+        cursor: pointer
+        margin-right: 40px
+    &_form
+        form
+            width: 488px
+        input,label
+            margin-left: 30px
+            margin-top: 10px
+        input
+            border: none
+            width: 90%
+            margin-bottom: 20px
+            height: 40px
+            outline: none
+            background: none
+            border-bottom: 1px solid white
+            color: white
+            font-size: 16px
+    &_button
+        margin-top: 35px
+        outline: none;
+        background: none;
+        color: white;
+        word-break: break-word
+    .errorlist
+        list-style: none
+        display: block;
+        font-size: 14px;
+        display: block;
+        color: #eb6d6d
+        margin: -10px 0px 12px 5px
+
+
+
+
+
