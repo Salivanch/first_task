@@ -59,13 +59,11 @@ class LoginForm(forms.Form):
 
 
 class QuestionForm(forms.ModelForm):
-
     def __init__(self, *args, **kwargs):
         super(QuestionForm,self).__init__(*args,**kwargs)
         self.fields['phone'].label_suffix=""
         self.fields['name'].label_suffix=""
         self.fields['email'].label_suffix=""
-
 
     class Meta:
         model=Question

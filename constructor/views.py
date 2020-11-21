@@ -1,18 +1,18 @@
 from django.shortcuts import render,redirect, reverse
 from django.views.generic import View
-from .models import SiteContent, RegistrationBlock, Profile, Question
-from .forms import RegistrationForm, LoginForm,QuestionForm
-from django.contrib.auth import logout,login,authenticate
+from .models import SiteContent, Profile, Question
+from .forms import RegistrationForm, LoginForm, QuestionForm
+from django.contrib.auth import logout, login, authenticate
 from .send_msg import send
 from django.contrib.auth.models import User
 from django.http import JsonResponse
-import random
 
 
 class LandingPage(View):
     template_name="constructor/LandingPage.html"
 
     def get_context_data(self, request, ctx={}):
+
         try:
             content=1 #id сборки блоков
             ctx['content']=SiteContent.objects.get(pk=content)
@@ -23,10 +23,9 @@ class LandingPage(View):
         except Exception:
             print("Такой сборки не существует!")
 
-
         ctx['RegistrationForm']=RegistrationForm()
         ctx['LoginForm']=LoginForm(domain=request.build_absolute_uri().split("/user")[0])
-        ctx['QuestionForm']=QuestionForm(request.POST if "name" in request.POST else None)
+        ctx['QuestionForm']=QuestionForm()
         return ctx
 
     def get(self,request):
